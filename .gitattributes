@@ -1,0 +1,12 @@
+# Loại trừ toàn bộ file báo cáo HTML/JS của QuestaSim khỏi thanh thống kê ngôn ngữ
+*coverage_html*/** linguist-vendored
+*.html linguist-vendored
+*.js linguist-vendored
+*.css linguist-vendored
+
+# Xem thư mục docs là tài liệu, không tính ngôn ngữ
+docs/** linguist-documentation
+
+# Đổi nhận diện file kịch bản .do từ Stata sang Tcl (hoặc ẩn đi)
+*.do linguist-language=Tcl
+*.do linguist-vendored
