@@ -1,0 +1,449 @@
+# vsim -c top -voptargs="+acc" -assertdebug -l sim_burst_seq_w_busy_in_read_trans.log -do "log -r /*; run -all; quit -f" 
+# Start time: 16:28:26 on Nov 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "APB_FSM_Controller(fast)".
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ahb_if(fast__2)
+# Loading work.apb_if(fast__2)
+# Loading work.Bridge_Top(fast)
+# Loading work.AHB_slave_interface(fast)
+# Loading work.APB_FSM_Controller(fast)
+# Loading work.ahb2apb_bridge_props(fast)
+# Loading work.ahb_if(fast)
+# Loading work.apb_if(fast)
+# log -r /*
+#  run -all
+# Burst sequence with inserting BUSY states in read transactions only
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=86a9b98c  Hwdata=31d4  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 51
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b990  Hwdata=a7bb  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b994  Hwdata=cf9becdc  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b998  Hwdata=a6ed99ba  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b99c  Hwdata=ed75ba06  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9a0  Hwdata=a7c2  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=4 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9a4  Hwdata=b5e8969b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 4 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9a8  Hwdata=f510  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9ac  Hwdata=bc3213de  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9b0  Hwdata=4ba2  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9b4  Hwdata=f6d627a5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=9 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9b8  Hwdata=dffcf42d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 9 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b9bc  Hwdata=8f4c4a70  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=9 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b980  Hwdata=eac5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 9 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b984  Hwdata=c975  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=86a9b988  Hwdata=cf063913  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=2 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=87c5773c  Hwdata=9a7d5ceb  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 2 cycles before driving transaction
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=85b17ed8  Hwdata=f594e057  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 6
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=85b17edc  Hwdata=e94a98f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=8 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=85b17ed0  Hwdata=ef00  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 8 cycles before driving transaction
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=85b17ed4  Hwdata=aaa5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=83e42690  Hwdata=4603  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=87e86efc  Hwdata=fa00  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 59
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=87e86ef0  Hwdata=ffc9b8f3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=87e86ef4  Hwdata=7acb  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=2 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=87e86ef8  Hwdata=c0fe6dda  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 2 cycles before driving transaction
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=839b94d4  Hwdata=37bd  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=84f55304  Hwdata=88cb6301  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 3
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f55308  Hwdata=d067  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f5530c  Hwdata=74dbd7c9  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f55310  Hwdata=79b7  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f55314  Hwdata=4f8dac77  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f55318  Hwdata=1c7a7f6  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f5531c  Hwdata=77c0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84f55300  Hwdata=25f078de  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=84c9b3e8  Hwdata=b0b8  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=83347e68  Hwdata=282fdae5  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 18
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=805ee288  Hwdata=262b  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=836f7458  Hwdata=c91e2d7e  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 39
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f745c  Hwdata=bd6f5907  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f7460  Hwdata=50d16e57  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f7464  Hwdata=421f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f7468  Hwdata=a885  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f746c  Hwdata=3952  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f7470  Hwdata=f513ea66  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=836f7474  Hwdata=fd2da05c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=80eb97e0  Hwdata=1da3  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=83996404  Hwdata=1405  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 218
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996408  Hwdata=cfd  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8399640c  Hwdata=c789ae85  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996410  Hwdata=a43c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996414  Hwdata=559aaf5f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996418  Hwdata=b60f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8399641c  Hwdata=4c8b161b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=6 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996420  Hwdata=3cfe7187  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=6 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 6 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996424  Hwdata=2c0f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 6 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996428  Hwdata=6928  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8399642c  Hwdata=9e14358b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=2 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996430  Hwdata=14aebbdb  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 2 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996434  Hwdata=31af5fd3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996438  Hwdata=8839d3a6  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8399643c  Hwdata=cc873a83  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=83996440  Hwdata=6700c26d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=831b98a0  Hwdata=a6a9  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=822c6ff8  Hwdata=982c9054  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 1
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c6ffc  Hwdata=f1a3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c7000  Hwdata=37ab  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c7004  Hwdata=f83d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c7008  Hwdata=132f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c700c  Hwdata=6dbd  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=7 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c7010  Hwdata=8777  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 7 cycles before driving transaction
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=822c7014  Hwdata=5cbef91d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=7 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=84c17580  Hwdata=21c1  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 7 cycles before driving transaction
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=886512cc  Hwdata=db66  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 69
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512d0  Hwdata=b6ea  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512d4  Hwdata=8dd8  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512d8  Hwdata=6a08bb15  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512dc  Hwdata=a7e0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512e0  Hwdata=4df1  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=8 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512e4  Hwdata=86a1235f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 8 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512e8  Hwdata=9555  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512ec  Hwdata=a927bdde  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512f0  Hwdata=a47a  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512f4  Hwdata=816137f6  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512f8  Hwdata=24d9  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=886512fc  Hwdata=ecba  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=88651300  Hwdata=f7c5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=88651304  Hwdata=e5253662  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=88651308  Hwdata=f2f9  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=892950a4  Hwdata=3c2c5f5  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=896a9180  Hwdata=7439  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 25
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a9184  Hwdata=6570e782  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a9188  Hwdata=b52  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a918c  Hwdata=b68e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a9190  Hwdata=51eaaae4  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=4 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a9194  Hwdata=56da  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=10 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 4 cycles before driving transaction
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a9198  Hwdata=bcdc  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=9 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 10 cycles before driving transaction
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=896a919c  Hwdata=74bfcb31  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=6 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 9 cycles before driving transaction
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8bc7efe8  Hwdata=f876  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 6 cycles before driving transaction
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8b912c54  Hwdata=7b4e0d24  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 136
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=8b912c58  Hwdata=cd953d25  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=6 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=8b912c5c  Hwdata=52d1  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 6 cycles before driving transaction
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=8b912c50  Hwdata=16f0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8981ff78  Hwdata=3a0d  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=838c73c0  Hwdata=543d  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 8
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=851f4498  Hwdata=70a3e37b  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=829978e0  Hwdata=754bb77  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 28
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=829978e4  Hwdata=1aca  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=829978e8  Hwdata=5e15  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=829978ec  Hwdata=3655  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=861ea14c  Hwdata=e29c2687  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=84373fbc  Hwdata=5391  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 7
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fa0  Hwdata=44a05bc6  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fa4  Hwdata=73eee223  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fa8  Hwdata=5d846542  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fac  Hwdata=fedd  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fb0  Hwdata=2cc8b247  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fb4  Hwdata=588ed02d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=84373fb8  Hwdata=48a  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=86f86b8c  Hwdata=c067e0a5  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8aa02100  Hwdata=cb5e  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 10
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02104  Hwdata=c315  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02108  Hwdata=4f70d975  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa0210c  Hwdata=4aac  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02110  Hwdata=396  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02114  Hwdata=468b9bd7  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02118  Hwdata=e65bd195  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa0211c  Hwdata=543a0190  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02120  Hwdata=cc05  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=8aa02124  Hwdata=9b8edf3b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=10 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8b239490  Hwdata=67a2c917  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 10 cycles before driving transaction
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=82aaaa88  Hwdata=117c  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 77
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaa8c  Hwdata=f656d7dd  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaa90  Hwdata=8621b0f3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaa94  Hwdata=8bfd4d0b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=4 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaa98  Hwdata=79df  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=3 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 4 cycles before driving transaction
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaa9c  Hwdata=ddab  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=2 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 3 cycles before driving transaction
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaaa0  Hwdata=502cb33  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 2 cycles before driving transaction
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=82aaaaa4  Hwdata=f403ed70  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=81dc833c  Hwdata=895f11  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=871037fc  Hwdata=19d59f35  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037c0  Hwdata=964d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037c4  Hwdata=83e9  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=8 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037c8  Hwdata=a185  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 8 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037cc  Hwdata=f64d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037d0  Hwdata=1c5fd304  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037d4  Hwdata=37b0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=10 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037d8  Hwdata=912c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 10 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037dc  Hwdata=8e82c6fa  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037e0  Hwdata=97f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037e4  Hwdata=2ca1ad2  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037e8  Hwdata=30bc  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037ec  Hwdata=3b9d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037f0  Hwdata=d06dda84  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=7 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037f4  Hwdata=fb4d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 7 cycles before driving transaction
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=871037f8  Hwdata=3a3f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=85e3bb60  Hwdata=642e  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8914014c  Hwdata=b9cbf97d  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 14
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=89140150  Hwdata=e262  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=89140154  Hwdata=32074c1c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=89140158  Hwdata=4005  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=5 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8914015c  Hwdata=362b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 5 cycles before driving transaction
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=89140140  Hwdata=6ab3677e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=1 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=89140144  Hwdata=e42f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_DRV] Simulating backpressure: waiting for 1 cycles before driving transaction
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=89140148  Hwdata=2eef  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=88cac8cc  Hwdata=4645  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8412d5c8  Hwdata=3d8b0f16  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 123
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8163e378  Hwdata=4cfa  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8897e510  Hwdata=9deba191  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# [GEN] length = 100
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=89825948  Hwdata=2e8e  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=0 busy_cycles=0 error_injection=0
+# AHB2APB_BRIDGE_SCB_SUMMARY: total=150, pass=150, fail=0
+# TEST PASSED
+# SB_AHB_CG: 70.00% coverage achieved.
+# SB_APB_CG: 66.67% coverage achieved.
+# MON_AHB_CG: 96.97% coverage achieved.
+# MON_AHB_RST_CG: 100.00% coverage achieved.
+# MON_AHB_HREADY_CG: 100.00% coverage achieved.
+# ** Note: $finish    : /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv(39)
+#    Time: 14670 ns  Iteration: 2  Instance: /top
+# End time: 16:28:28 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

@@ -1,0 +1,113 @@
+# vsim -c top -voptargs="+acc" -assertdebug -l sim_back_to_back_write_seq_test.log -do "log -r /*; run -all; quit -f" 
+# Start time: 16:28:17 on Nov 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "APB_FSM_Controller(fast)".
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ahb_if(fast__2)
+# Loading work.apb_if(fast__2)
+# Loading work.Bridge_Top(fast)
+# Loading work.AHB_slave_interface(fast)
+# Loading work.APB_FSM_Controller(fast)
+# Loading work.ahb2apb_bridge_props(fast)
+# Loading work.ahb_if(fast)
+# Loading work.apb_if(fast)
+# log -r /*
+#  run -all
+# Back-to-back write sequence test
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=893b9388  Hwdata=d415  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=86a9b98c  Hwdata=31d4  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=855f2db8  Hwdata=a7bb  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=831d9030  Hwdata=cf9becdc  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=83f48ea4  Hwdata=a6ed99ba  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=842d3a54  Hwdata=ed75ba06  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8678e0f0  Hwdata=a7c2  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=84663ea0  Hwdata=b5e8969b  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=883fd964  Hwdata=f510  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8b626a7c  Hwdata=bc3213de  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=86999fac  Hwdata=4ba2  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=87f6301c  Hwdata=f6d627a5  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8b54d5b4  Hwdata=dffcf42d  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8b8c51d0  Hwdata=8f4c4a70  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=867eecac  Hwdata=eac5  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=84dac31c  Hwdata=c975  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=81fa6f30  Hwdata=cf063913  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=87c5773c  Hwdata=9a7d5ceb  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8220a3d4  Hwdata=bda7  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=86914b68  Hwdata=7ff0b2d0  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8a8e2c78  Hwdata=ef00  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8603971c  Hwdata=aaa5  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=83e42690  Hwdata=4603  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8aa221e0  Hwdata=d675  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8885a450  Hwdata=8f5400e8  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=87e86efc  Hwdata=fa00  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=817a11f4  Hwdata=ffc9b8f3  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=89acf958  Hwdata=7acb  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8b3e64f8  Hwdata=c0fe6dda  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=839b94d4  Hwdata=37bd  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8bbca2a4  Hwdata=25d0899f  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8abae28c  Hwdata=3a95  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=84f55304  Hwdata=88cb6301  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=8307ece0  Hwdata=d067  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 9
+# [AHB_TRANS_ITEM] Haddr=80d892fc  Hwdata=74dbd7c9  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# AHB2APB_BRIDGE_SCB_SUMMARY: total=35, pass=35, fail=0
+# TEST PASSED
+# SB_AHB_CG: 90.00% coverage achieved.
+# SB_APB_CG: 100.00% coverage achieved.
+# MON_AHB_CG: 45.45% coverage achieved.
+# MON_AHB_RST_CG: 100.00% coverage achieved.
+# MON_AHB_HREADY_CG: 66.67% coverage achieved.
+# ** Note: $finish    : /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv(39)
+#    Time: 4470 ns  Iteration: 2  Instance: /top
+# End time: 16:28:20 on Nov 07,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

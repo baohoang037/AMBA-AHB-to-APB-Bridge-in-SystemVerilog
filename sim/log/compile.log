@@ -1,0 +1,17 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 16:28:37 on Nov 07,2026
+vlog -sv "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/rtl" "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb" "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent" "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent" "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/env" "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/assertions" "+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/tests" "+define+TEST_NAME=mixed_seq_test" "+define+ASSERT_OFF" -f /home/bao/my_project/DV/AHB2APB_Brige/compile.f 
+-- Compiling module Bridge_Top
+-- Compiling module AHB_slave_interface
+-- Compiling module APB_FSM_Controller
+-- Compiling interface ahb_if
+-- Compiling interface apb_if
+-- Compiling package top_sv_unit
+-- Compiling module ahb2apb_bridge_props
+-- Compiling module top
+
+Top level modules:
+	top
+** Warning: (vlog-2650) 'bind' found in compilation unit scope. Please use -cuname to ensure that 'bind' gets elaborated.
+End time: 16:28:38 on Nov 07,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1

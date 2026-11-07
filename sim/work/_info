@@ -1,0 +1,272 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/bao/my_project/DV/AHB2APB_Brige/sim
+T_opt
+!s11d top_sv_unit /home/bao/my_project/DV/AHB2APB_Brige/sim/work 2 ahb_if 1 /home/bao/my_project/DV/AHB2APB_Brige/sim/work apb_if 1 /home/bao/my_project/DV/AHB2APB_Brige/sim/work 
+!s110 1794043912
+Vaib<m66BDoIoh2afkoA6I1
+04 3 4 work top fast 0
+=1-000ae431a4f1-6aeef008-a4c3d-3e76
+Z1 !s102 +cover=bcesft
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +cover=bcesft
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2_1;73
+vahb2apb_bridge_props
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 DXx4 work 11 top_sv_unit 0 22 ><SQiXK@BedIofzcc;<za0
+Z5 !s110 1794043910
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 eT_h`@?3SdN0Mif6gVfc73
+IL;4j46eR<`Y8HPklz>V1n2
+Z7 !s105 top_sv_unit
+S1
+R0
+Z8 w1793848757
+8/home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv
+Z9 F/home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv
+!i122 0
+L0 1 26
+Z10 OL;L;2021.2_1;73
+31
+Z11 !s108 1794043910.000000
+Z12 !s107 /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/mixed_seq_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/error_injection_seq_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/back_to_back_transfer_seq_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_write_trans.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_trans.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_reset_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/back_to_back_write_seq_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/normal_burst_seq_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/env/scoreboard.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_agent.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_monitor.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_driver.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_trans_item.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_agent_files.svh|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_agent.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_monitor.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_driver.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_generator.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_trans_item.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_agent_files.svh|/home/bao/my_project/DV/AHB2APB_Brige/tb/env/environment.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/test_files.svh|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_if.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_if.sv|/home/bao/my_project/DV/AHB2APB_Brige/tb/top.sv|/home/bao/my_project/DV/AHB2APB_Brige/rtl/APB_Controller_.v|/home/bao/my_project/DV/AHB2APB_Brige/rtl/AHB_Slave_Interface_.v|/home/bao/my_project/DV/AHB2APB_Brige/rtl/Bridge_top_.v|
+Z13 !s90 -sv|+cover=bcesft|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/rtl|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/env|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/assertions|+incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/tests|+define+TEST_NAME=mixed_seq_test|+define+ASSERT_OFF|-f|/home/bao/my_project/DV/AHB2APB_Brige/compile.f|
+!i113 0
+R1
+Z14 o-sv +cover=bcesft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 !s92 -sv +cover=bcesft +incdir+/home/bao/my_project/DV/AHB2APB_Brige/rtl +incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb +incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent +incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent +incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/env +incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/assertions +incdir+/home/bao/my_project/DV/AHB2APB_Brige/tb/tests +define+TEST_NAME=mixed_seq_test +define+ASSERT_OFF -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+Yahb_if
+R7
+R4
+R3
+R5
+!i10b 1
+!s100 5WOJ2ikmTmTi5]e?g]N7X2
+Iz27mj>QzgTO9zeT_IF[=Q0
+S1
+R0
+R8
+8/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_if.sv
+Z16 F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_if.sv
+!i122 0
+L0 8 0
+R6
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2
+vAHB_slave_interface
+R3
+R5
+!i10b 1
+!s100 PPmh2mAQXoF_MMbD3ZX1R2
+I=TTkgahR`SoJ:4]bfYe953
+S1
+R0
+w1793930588
+8/home/bao/my_project/DV/AHB2APB_Brige/rtl/AHB_Slave_Interface_.v
+F/home/bao/my_project/DV/AHB2APB_Brige/rtl/AHB_Slave_Interface_.v
+!i122 0
+L0 1 84
+R6
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2
+n@a@h@b_slave_interface
+vAPB_FSM_Controller
+R3
+R5
+!i10b 1
+!s100 0`[C]j]YRg[fMX`3=98AJ2
+IBj@<fC59>G6MAP]FDaI[C2
+S1
+R0
+w1794043183
+8/home/bao/my_project/DV/AHB2APB_Brige/rtl/APB_Controller_.v
+F/home/bao/my_project/DV/AHB2APB_Brige/rtl/APB_Controller_.v
+!i122 0
+L0 12 315
+R6
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2
+n@a@p@b_@f@s@m_@controller
+Yapb_if
+R7
+R4
+R3
+R5
+!i10b 1
+!s100 4RXeV]7>Vl?0beXY9:oKB0
+ImWIfL`iXz6aD;DbeFJ^>V2
+S1
+R0
+R8
+8/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_if.sv
+Z17 F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_if.sv
+!i122 0
+L0 9 0
+R6
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2
+vBridge_Top
+R3
+R5
+!i10b 1
+!s100 PmgR1lTP<P]zND?MZ@GEa0
+Ig85X:XLUkPN9RAA?Ac5I13
+S1
+R0
+R8
+8/home/bao/my_project/DV/AHB2APB_Brige/rtl/Bridge_top_.v
+F/home/bao/my_project/DV/AHB2APB_Brige/rtl/Bridge_top_.v
+!i122 0
+L0 13 28
+R6
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2
+n@bridge_@top
+vtop
+R3
+R4
+R5
+R6
+r1
+!s85 0
+!i10b 1
+!s100 BF1[ToZ`CgE_jAfKdzoff3
+I>R0:]WAJ2UaH>GG4nUBFn0
+R7
+S1
+R0
+w1793931204
+Z18 8/home/bao/my_project/DV/AHB2APB_Brige/tb/top.sv
+Z19 F/home/bao/my_project/DV/AHB2APB_Brige/tb/top.sv
+!i122 0
+L0 7 81
+R10
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2
+Xtop_sv_unit
+!s115 apb_if
+!s115 ahb_if
+R3
+R5
+V><SQiXK@BedIofzcc;<za0
+r1
+!s85 0
+!i10b 1
+!s100 P;^5<E53l_24?>k]dW3FW3
+I><SQiXK@BedIofzcc;<za0
+!i103 1
+S1
+R0
+w1794042643
+R18
+R19
+R16
+R17
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/test_files.svh
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/env/environment.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_agent_files.svh
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_trans_item.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_generator.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_driver.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_monitor.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_agent.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_agent_files.svh
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_trans_item.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_driver.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_monitor.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_agent.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/env/scoreboard.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/normal_burst_seq_test.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/back_to_back_write_seq_test.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_reset_test.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_trans.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_write_trans.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/back_to_back_transfer_seq_test.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/error_injection_seq_test.sv
+F/home/bao/my_project/DV/AHB2APB_Brige/tb/tests/mixed_seq_test.sv
+R9
+!i122 0
+L0 4 0
+R10
+31
+R11
+R12
+R13
+!i113 0
+R1
+R14
+R15
+R2

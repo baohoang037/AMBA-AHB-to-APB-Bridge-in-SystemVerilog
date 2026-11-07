@@ -1,0 +1,572 @@
+# vsim -c top -coverage -voptargs="+cover=bcesft" -assertdebug -l sim_cov_normal_burst_seq_test.log -do "coverage save -onexit normal_burst_seq_test.ucdb; log -r /*; run -all; quit -f" 
+# Start time: 22:14:43 on Nov 05,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "APB_FSM_Controller(fast)".
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.Bridge_Top(fast)
+# Loading work.ahb_if(fast)
+# Loading work.apb_if(fast)
+# coverage save -onexit normal_burst_seq_test.ucdb
+#  log -r /*
+#  run -all
+# Normal burst sequence test
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8896aa2c  Hwdata=81ea  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 102
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa30  Hwdata=2e2b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa34  Hwdata=14ef  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa38  Hwdata=e968  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# ** Error: Assertion error.
+#    Time: 130 ns Started: 110 ns  Scope: top.DUT.ahb2apb_bridge_props_inst.apb_trans_assert File: /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv Line: 24
+# ** Error: Assertion error.
+#    Time: 150 ns Started: 130 ns  Scope: top.DUT.ahb2apb_bridge_props_inst.apb_trans_assert File: /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv Line: 24
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa3c  Hwdata=a62aef5d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa40  Hwdata=f23a12ca  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa44  Hwdata=bdfac22  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa48  Hwdata=4424  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa4c  Hwdata=a9eb  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa50  Hwdata=2e58ad8c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa54  Hwdata=f03ac5f0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa58  Hwdata=d4ba  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa5c  Hwdata=3112  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa60  Hwdata=146  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa64  Hwdata=91a9f7c5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8896aa68  Hwdata=700d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=89721800  Hwdata=cc3d  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8bd63d40  Hwdata=e6fc  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 45
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d44  Hwdata=aa515816  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d48  Hwdata=10cd62e0  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d4c  Hwdata=9d163fb9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d50  Hwdata=2fe1f7e0  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d54  Hwdata=dcc5  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d58  Hwdata=1e57  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8bd63d5c  Hwdata=7591275c  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8a99c5d8  Hwdata=1451633  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=86c71c14  Hwdata=2a29  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 185
+# [AHB_GEN] 2
+# [AHB_TRANS_ITEM] Haddr=86c71c18  Hwdata=bacb  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 2
+# [AHB_TRANS_ITEM] Haddr=86c71c1c  Hwdata=f055  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 2
+# [AHB_TRANS_ITEM] Haddr=86c71c20  Hwdata=d8962e95  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=86bf7e5c  Hwdata=cfa80984  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8924fe40  Hwdata=6d75a0de  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 82
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe44  Hwdata=37af121  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe48  Hwdata=846bd1b9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe4c  Hwdata=bde2090b  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe50  Hwdata=8edd  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe54  Hwdata=262b  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe58  Hwdata=ed9d1284  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=8924fe5c  Hwdata=e21e3ff2  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=80195980  Hwdata=8b174c57  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=825dbbd4  Hwdata=d3b501fd  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 3
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=825dbbd8  Hwdata=ed81  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=825dbbdc  Hwdata=36b7  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=817983d0  Hwdata=cb000b63  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=87af088c  Hwdata=8c92aa77  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 42
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af0890  Hwdata=e590  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af0894  Hwdata=e8e2  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af0898  Hwdata=2c47  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af089c  Hwdata=cb5d  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af08a0  Hwdata=c6ba  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af08a4  Hwdata=3076d73a  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=87af08a8  Hwdata=fb7a  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=825fa584  Hwdata=a26d6dd1  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=886d6550  Hwdata=1bf8  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 143
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=81367a3c  Hwdata=616e7d5a  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8506b2a8  Hwdata=57af46bb  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 5
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2ac  Hwdata=ba5526c3  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2b0  Hwdata=25aa  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2b4  Hwdata=32ed  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2b8  Hwdata=26de  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2bc  Hwdata=d4bed4d9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2c0  Hwdata=aa4bd510  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2c4  Hwdata=76a04ae9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2c8  Hwdata=3f9bccb9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2cc  Hwdata=b512  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2d0  Hwdata=753  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2d4  Hwdata=1ce6  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2d8  Hwdata=96fc7f70  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2dc  Hwdata=ac4460be  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2e0  Hwdata=801653e0  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=8506b2e4  Hwdata=f743  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=86b8cc70  Hwdata=cfa54591  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=890cacbc  Hwdata=bcb4  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 35
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890caca0  Hwdata=3c53  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890caca4  Hwdata=30d4  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890caca8  Hwdata=4eaf97c5  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890cacac  Hwdata=7dda  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# ** Error: Assertion error.
+#    Time: 3310 ns Started: 3290 ns  Scope: top.DUT.ahb2apb_bridge_props_inst.apb_trans_assert File: /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv Line: 24
+# ** Error: Assertion error.
+#    Time: 3330 ns Started: 3310 ns  Scope: top.DUT.ahb2apb_bridge_props_inst.apb_trans_assert File: /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv Line: 24
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890cacb0  Hwdata=fd40311e  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890cacb4  Hwdata=4866f323  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 6
+# [AHB_TRANS_ITEM] Haddr=890cacb8  Hwdata=9ff1  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=889ec384  Hwdata=648a  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8bf49c68  Hwdata=50cb  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 141
+# [AHB_GEN] 2
+# [AHB_TRANS_ITEM] Haddr=8bf49c6c  Hwdata=b880e1f5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 2
+# [AHB_TRANS_ITEM] Haddr=8bf49c70  Hwdata=2eccbc28  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 2
+# [AHB_TRANS_ITEM] Haddr=8bf49c74  Hwdata=d9650e7e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=83e0ba64  Hwdata=4417718e  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8ac13514  Hwdata=bd69901c  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 145
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13518  Hwdata=6a94  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac1351c  Hwdata=9e23  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13520  Hwdata=1ee8  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13524  Hwdata=1c40b665  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13528  Hwdata=b1a1  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac1352c  Hwdata=bba80ea5  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13530  Hwdata=7b3b  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13534  Hwdata=2472  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13538  Hwdata=f782  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac1353c  Hwdata=59941346  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13500  Hwdata=25f29efa  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13504  Hwdata=2998  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13508  Hwdata=73bf  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac1350c  Hwdata=1564  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=8ac13510  Hwdata=d2536e6a  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8879895c  Hwdata=9b32f862  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=81cc70c4  Hwdata=4008  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 142
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70c8  Hwdata=b3a9  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70cc  Hwdata=5b83  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70d0  Hwdata=a5a7  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70d4  Hwdata=cfd7  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70d8  Hwdata=cebc  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70dc  Hwdata=76a4  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70e0  Hwdata=87ce  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70e4  Hwdata=adaca9f8  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70e8  Hwdata=6514916b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70ec  Hwdata=df5f2c00  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70f0  Hwdata=806fdd54  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70f4  Hwdata=320f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70f8  Hwdata=d17b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70fc  Hwdata=78ed0b7  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 7
+# [AHB_TRANS_ITEM] Haddr=81cc70c0  Hwdata=87fa  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=110 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8af8f2cc  Hwdata=bcb8  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=81574b98  Hwdata=668e0044  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 17
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=82de55f8  Hwdata=6d75  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=80f8f914  Hwdata=3595de04  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 168
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f918  Hwdata=f003  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f91c  Hwdata=5855  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f920  Hwdata=770e8a53  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f924  Hwdata=e007  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f928  Hwdata=4de6  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f92c  Hwdata=f9b4f38e  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=80f8f930  Hwdata=7d0123d9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8596227c  Hwdata=83cf  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=8be2f840  Hwdata=c0c  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 76
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=8be2f844  Hwdata=8af1  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=8be2f848  Hwdata=92083989  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 5
+# [AHB_TRANS_ITEM] Haddr=8be2f84c  Hwdata=429e7ac4  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=10 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8882da70  Hwdata=adcdaa3c  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=100 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=85f170a8  Hwdata=9e60afd0  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 125
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=84ae4f18  Hwdata=c2c1df21  Hrdata=x  Hwrite=0  Htrans=0 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=88a7017c  Hwdata=5ad5  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 122
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=84264620  Hwdata=2898095f  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=81adc0b0  Hwdata=e138  Hrdata=x  Hwrite=1  Htrans=10 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 110
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0b4  Hwdata=2cfb2dd9  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0b8  Hwdata=e915  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0bc  Hwdata=282a  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0c0  Hwdata=423f  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0c4  Hwdata=1a3  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0c8  Hwdata=6fe4  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 3
+# [AHB_TRANS_ITEM] Haddr=81adc0cc  Hwdata=7b7e  Hrdata=x  Hwrite=1  Htrans=11 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=85d867ec  Hwdata=333a5310  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=11 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=89843a04  Hwdata=3ea45976  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 42
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a08  Hwdata=7506b731  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a0c  Hwdata=41b0cc6e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a10  Hwdata=aeacd012  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# ** Error: Assertion error.
+#    Time: 6590 ns Started: 6570 ns  Scope: top.DUT.ahb2apb_bridge_props_inst.apb_trans_assert File: /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv Line: 24
+# ** Error: Assertion error.
+#    Time: 6610 ns Started: 6590 ns  Scope: top.DUT.ahb2apb_bridge_props_inst.apb_trans_assert File: /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv Line: 24
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a14  Hwdata=b403fb8d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a18  Hwdata=866fb569  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a1c  Hwdata=b5a4  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a20  Hwdata=bf7ab4c5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a24  Hwdata=9dbb45a3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a28  Hwdata=5b089cfa  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a2c  Hwdata=cc4394ff  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a30  Hwdata=a704  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a34  Hwdata=d36d91c0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a38  Hwdata=b2a694a3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a3c  Hwdata=75114e4d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 4
+# [AHB_TRANS_ITEM] Haddr=89843a40  Hwdata=2fce986b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=111 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=82a85778  Hwdata=155f  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=101 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 0
+# [AHB_TRANS_ITEM] Haddr=890a1e28  Hwdata=ea366da0  Hrdata=x  Hwrite=0  Htrans=10 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [GEN] length = 83
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e2c  Hwdata=5ed7  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e30  Hwdata=855cd786  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e34  Hwdata=daf  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e38  Hwdata=ba22  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e3c  Hwdata=e081  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e40  Hwdata=61550451  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e44  Hwdata=39438c44  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e48  Hwdata=df0f4e15  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e4c  Hwdata=a9f6  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e50  Hwdata=2756ee86  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e54  Hwdata=6dfc7ac0  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e58  Hwdata=23368360  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e5c  Hwdata=79d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e60  Hwdata=efab  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e64  Hwdata=6547  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e68  Hwdata=89cfee56  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e6c  Hwdata=23a5  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e70  Hwdata=33b5b9a6  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e74  Hwdata=ceee  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e78  Hwdata=a1cf  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e7c  Hwdata=87b8  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e80  Hwdata=137a9633  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e84  Hwdata=bf02  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e88  Hwdata=3781  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e8c  Hwdata=b26c48a9  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e90  Hwdata=e06e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e94  Hwdata=191f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e98  Hwdata=3bdf1c2b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1e9c  Hwdata=8236ad43  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ea0  Hwdata=2024  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ea4  Hwdata=292e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ea8  Hwdata=f2ef  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1eac  Hwdata=a62ff27d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1eb0  Hwdata=3317  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1eb4  Hwdata=f978f896  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1eb8  Hwdata=d544c7b4  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ebc  Hwdata=d2ae  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ec0  Hwdata=29040d65  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ec4  Hwdata=56ce  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ec8  Hwdata=9cbb2106  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ecc  Hwdata=5e90100d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ed0  Hwdata=6e4450d3  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ed4  Hwdata=431f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ed8  Hwdata=97233b5b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1edc  Hwdata=2df55578  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ee0  Hwdata=83f0d179  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ee4  Hwdata=efbb  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ee8  Hwdata=f6f53147  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1eec  Hwdata=d218  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ef0  Hwdata=567955aa  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ef4  Hwdata=41c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1ef8  Hwdata=77602bb1  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1efc  Hwdata=c71  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f00  Hwdata=14b66a25  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f04  Hwdata=2d8c  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f08  Hwdata=27e2  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f0c  Hwdata=24e61f45  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f10  Hwdata=c226206f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f14  Hwdata=d338  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f18  Hwdata=2d17  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f1c  Hwdata=6cf9f090  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f20  Hwdata=6334019d  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f24  Hwdata=ca33  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f28  Hwdata=426e2427  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f2c  Hwdata=ab1e75b1  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f30  Hwdata=748f5d35  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f34  Hwdata=d068  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f38  Hwdata=781b  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f3c  Hwdata=443e  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f40  Hwdata=1c55  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f44  Hwdata=503809a8  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f48  Hwdata=f2502702  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f4c  Hwdata=49faf970  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f50  Hwdata=b246  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f54  Hwdata=6614  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f58  Hwdata=207f  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f5c  Hwdata=40c3d756  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f60  Hwdata=1011  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f64  Hwdata=ad10caee  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f68  Hwdata=74a6b404  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f6c  Hwdata=8d66  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 1
+# [AHB_TRANS_ITEM] Haddr=890a1f70  Hwdata=68c60a97  Hrdata=x  Hwrite=0  Htrans=11 Hsize = 10 Hburst=1 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# [AHB_GEN] 8
+# [AHB_TRANS_ITEM] Haddr=8a32d96c  Hwdata=c51b  Hrdata=x  Hwrite=1  Htrans=0 Hsize = 10 Hburst=0 Hresetn=1 reset_dis=1 busy_cycles_dis=1 busy_cycles=0 error_injection=0
+# AHB2APB_BRIDGE_SCB_SUMMARY: total=230, pass=230, fail=0
+# TEST PASSED
+# SB_AHB_CG: 100.00% coverage achieved.
+# SB_APB_CG: 100.00% coverage achieved.
+# MON_AHB_CG: 68.18% coverage achieved.
+# MON_AHB_RST_CG: 25.00% coverage achieved.
+# MON_AHB_HREADY_CG: 83.33% coverage achieved.
+# ** Note: $finish    : /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv(39)
+#    Time: 13690 ns  Iteration: 2  Instance: /top
+# Saving coverage database on exit...
+# End time: 22:14:47 on Nov 05,2026, Elapsed time: 0:00:04
+# Errors: 6, Warnings: 0

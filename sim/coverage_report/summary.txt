@@ -1,0 +1,13 @@
+Coverage Report Totals BY INSTANCES: Number of Instances 8
+
+    Enabled Coverage              Bins      Hits    Misses    Weight  Coverage
+    ----------------              ----      ----    ------    ------  --------
+    Branches                        62        62         0         1   100.00%
+    Conditions                      13        13         0         1   100.00%
+    Expressions                      1         1         0         1   100.00%
+    FSM States                       8         8         0         1   100.00%
+    FSM Transitions                 17        17         0         1   100.00%
+    Statements                     116       116         0         1   100.00%
+    Toggles                       1138      1138         0         1   100.00%
+Total coverage (filtered view): 100.00%
+

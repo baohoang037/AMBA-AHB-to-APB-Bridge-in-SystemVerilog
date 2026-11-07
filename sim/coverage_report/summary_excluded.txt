@@ -1,0 +1,1232 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/in0
+=== Design Unit: work.ahb_if
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Toggles                        214       190        24         0    88.78%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/in0 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                        Haddr[0-1]           0           0        0.00 
+                                       Haddr[2-27]           1           1      100.00 
+                                      Haddr[28-31]           0           0        0.00 
+                                       Hburst[0-2]           0           0        0.00 
+                                      Hrdata[0-31]           1           1      100.00 
+                                          Hreadyin           0           0        0.00 
+                                         Hreadyout           1           1      100.00 
+                                           Hresetn           1           1      100.00 
+                                        Hresp[0-1]           0           0        0.00 
+                                       Htrans[0-1]           1           1      100.00 
+                                      Hwdata[0-31]           1           1      100.00 
+                                            Hwrite           1           1      100.00 
+
+Total Node Count     =        107 
+Toggled Node Count   =         95 
+Untoggled Node Count =         12 
+Excluded Node Count =          0 
+
+Toggle Coverage      =      88.78% (190 of 214 bins)
+
+=================================================================================
+=== Instance: /top/in1
+=== Design Unit: work.apb_if
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Toggles                        202       192        10         0    95.04%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/in1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                        Paddr[0-1]           0           0        0.00 
+                                       Paddr[2-27]           1           1      100.00 
+                                      Paddr[28-30]           0           0        0.00 
+                                         Paddr[31]           1           1      100.00 
+                                           Penable           1           1      100.00 
+                                      Prdata[0-31]           1           1      100.00 
+                                        Pselx[0-2]           1           1      100.00 
+                                      Pwdata[0-31]           1           1      100.00 
+                                            Pwrite           1           1      100.00 
+
+Total Node Count     =        101 
+Toggled Node Count   =         96 
+Untoggled Node Count =          5 
+Excluded Node Count =          0 
+
+Toggle Coverage      =      95.04% (192 of 202 bins)
+
+=================================================================================
+=== Instance: /top/DUT/AHBSlave
+=== Design Unit: work.AHB_slave_interface
+=================================================================================
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Conditions                      19        12         7         0    63.15%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/DUT/AHBSlave --
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/rtl/AHB_Slave_Interface_.v
+
+----------------Focused Condition View-------------------
+Line       36 Item    1  ((((Htrans == 2) || (Htrans == 3)) & Hreadyin) & Hreadyout)
+Condition totals: 2 of 4 input terms covered = 50.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  (Htrans == 3)         N  '_1' not hit             Hit '_1'
+       Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (Htrans == 2)_0       (Hreadyout && Hreadyin && ~(Htrans == 3))
+  Row   2:          1  (Htrans == 2)_1       (Hreadyout && Hreadyin)       
+  Row   3:          1  (Htrans == 3)_0       (Hreadyout && Hreadyin && ~(Htrans == 2))
+  Row   4:    ***0***  (Htrans == 3)_1       (Hreadyout && Hreadyin && ~(Htrans == 2))
+  Row   5:    ***0***  Hreadyin_0            (Hreadyout && ((Htrans == 2) || (Htrans == 3)))
+  Row   6:          1  Hreadyin_1            (Hreadyout && ((Htrans == 2) || (Htrans == 3)))
+  Row   7:          1  Hreadyout_0           (((Htrans == 2) || (Htrans == 3)) & Hreadyin)
+  Row   8:          1  Hreadyout_1           (((Htrans == 2) || (Htrans == 3)) & Hreadyin)
+
+----------------Focused Condition View-------------------
+Line       39 Item    1  (((Htrans == 0) & Hreadyin) & Hreadyout)
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+       Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (Htrans == 0)_0       (Hreadyout && Hreadyin)       
+  Row   2:          1  (Htrans == 0)_1       (Hreadyout && Hreadyin)       
+  Row   3:    ***0***  Hreadyin_0            (Hreadyout && (Htrans == 0))  
+  Row   4:          1  Hreadyin_1            (Hreadyout && (Htrans == 0))  
+  Row   5:          1  Hreadyout_0           ((Htrans == 0) & Hreadyin)    
+  Row   6:          1  Hreadyout_1           ((Htrans == 0) & Hreadyin)    
+
+----------------Focused Condition View-------------------
+Line       48 Item    1  (((Hreadyin & Hreadyout) & (addr_outstanding_num > 0)) & (Htrans != 1))
+Condition totals: 3 of 4 input terms covered = 75.00%
+
+                  Input Term   Covered  Reason for no coverage   Hint
+                 -----------  --------  -----------------------  --------------
+                    Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                    Non-masking condition(s)      
+ ---------  ---------  --------------------          -------------------------     
+  Row   1:    ***0***  Hreadyin_0                    ((Htrans != 1) && (addr_outstanding_num > 0) && Hreadyout)
+  Row   2:          1  Hreadyin_1                    ((Htrans != 1) && (addr_outstanding_num > 0) && Hreadyout)
+  Row   3:          1  Hreadyout_0                   ((Htrans != 1) && (addr_outstanding_num > 0) && Hreadyin)
+  Row   4:          1  Hreadyout_1                   ((Htrans != 1) && (addr_outstanding_num > 0) && Hreadyin)
+  Row   5:          1  (addr_outstanding_num > 0)_0  ((Htrans != 1) && (Hreadyin & Hreadyout))
+  Row   6:          1  (addr_outstanding_num > 0)_1  ((Htrans != 1) && (Hreadyin & Hreadyout))
+  Row   7:          1  (Htrans != 1)_0               ((Hreadyin & Hreadyout) & (addr_outstanding_num > 0))
+  Row   8:          1  (Htrans != 1)_1               ((Hreadyin & Hreadyout) & (addr_outstanding_num > 0))
+
+
+----------------Focused Condition View-------------------
+Line       111 Item    1  ((((Hresetn && Hreadyin) && (Haddr >= -2147483648)) && (Haddr < -1946157056)) && ((Htrans == 2) || (Htrans == 3)))
+Condition totals: 3 of 6 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+                Hreadyin         N  '_0' not hit             Hit '_0'
+  (Haddr >= -2147483648)         N  '_0' not hit             Hit '_0'
+   (Haddr < -1946157056)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          1  Hresetn_0                 -                             
+  Row   2:          1  Hresetn_1                 (((Htrans == 2) || (Htrans == 3)) && (Haddr < -1946157056) && (Haddr >= -2147483648) && Hreadyin)
+  Row   3:    ***0***  Hreadyin_0                Hresetn                       
+  Row   4:          1  Hreadyin_1                (((Htrans == 2) || (Htrans == 3)) && (Haddr < -1946157056) && (Haddr >= -2147483648) && Hresetn)
+  Row   5:    ***0***  (Haddr >= -2147483648)_0  (Hresetn && Hreadyin)         
+  Row   6:          1  (Haddr >= -2147483648)_1  (((Htrans == 2) || (Htrans == 3)) && (Haddr < -1946157056) && (Hresetn && Hreadyin))
+  Row   7:    ***0***  (Haddr < -1946157056)_0   ((Hresetn && Hreadyin) && (Haddr >= -2147483648))
+  Row   8:          1  (Haddr < -1946157056)_1   (((Htrans == 2) || (Htrans == 3)) && ((Hresetn && Hreadyin) && (Haddr >= -2147483648)))
+  Row   9:          1  (Htrans == 2)_0           ((((Hresetn && Hreadyin) && (Haddr >= -2147483648)) && (Haddr < -1946157056)) && ~(Htrans == 3))
+ Row   10:          1  (Htrans == 2)_1           (((Hresetn && Hreadyin) && (Haddr >= -2147483648)) && (Haddr < -1946157056))
+ Row   11:          1  (Htrans == 3)_0           ((((Hresetn && Hreadyin) && (Haddr >= -2147483648)) && (Haddr < -1946157056)) && ~(Htrans == 2))
+ Row   12:          1  (Htrans == 3)_1           ((((Hresetn && Hreadyin) && (Haddr >= -2147483648)) && (Haddr < -1946157056)) && ~(Htrans == 2))
+
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Toggles                        334       246        88         0    73.65%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/DUT/AHBSlave --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                       Haddr1[0-1]           0           0        0.00 
+                                      Haddr1[2-27]           1           1      100.00 
+                                     Haddr1[28-30]           0           0        0.00 
+                                        Haddr1[31]           1           1      100.00 
+                                       Haddr2[0-1]           0           0        0.00 
+                                      Haddr2[2-27]           1           1      100.00 
+                                     Haddr2[28-30]           0           0        0.00 
+                                        Haddr2[31]           1           1      100.00 
+                        Haddr_under_handling[0-31]           0           0        0.00 
+                                     Hwdata1[0-31]           1           1      100.00 
+                                     Hwdata2[0-31]           1           1      100.00 
+                                         Hwrite_1d           1           1      100.00 
+                                         Hwrite_2d           1           1      100.00 
+                             Hwrite_under_handling           0           0        0.00 
+                           addr_outstanding_num[0]           1           1      100.00 
+                           addr_outstanding_num[1]           0           0        0.00 
+                              data_outstanding_num           1           1      100.00 
+                                             valid           1           1      100.00 
+
+Total Node Count     =        167 
+Toggled Node Count   =        123 
+Untoggled Node Count =         44 
+Excluded Node Count =          0 
+
+Toggle Coverage      =      73.65% (246 of 334 bins)
+
+=================================================================================
+=== Instance: /top/DUT/APBControl
+=== Design Unit: work.APB_FSM_Controller
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Branches                        74        70         4         0    94.59%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/DUT/APBControl
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File /home/bao/my_project/DV/AHB2APB_Brige/rtl/APB_Controller_.v
+------------------------------------IF Branch------------------------------------
+    245                                       52     Count coming in to IF
+    245             1                         52     				   Pselx_temp=(data_outstanding_num > 0) ? tempselx : 3'b000;
+    245             2                    ***0***     				   Pselx_temp=(data_outstanding_num > 0) ? tempselx : 3'b000;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    254                                       10     Count coming in to IF
+    254             2                    ***0***                        Pselx_temp=Hwrite ? ((data_outstanding_num > 0) ? tempselx : 3'b000) : tempselx;
+    254             3                         10                        Pselx_temp=Hwrite ? ((data_outstanding_num > 0) ? tempselx : 3'b000) : tempselx;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    281                                        4     Count coming in to IF
+    281             2                    ***0***                        Pselx_temp=Hwrite ? ((data_outstanding_num > 0) ? tempselx : 3'b000) : tempselx;
+    281             3                          4                        Pselx_temp=Hwrite ? ((data_outstanding_num > 0) ? tempselx : 3'b000) : tempselx;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    284                                        4     Count coming in to IF
+    284             2                          4                         Hreadyout_temp=Hwrite ? ((data_outstanding_num == 0) ? 1 : 0) : 0;;
+    284             3                    ***0***                         Hreadyout_temp=Hwrite ? ((data_outstanding_num == 0) ? 1 : 0) : 0;;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Conditions                      39        26        13         0    66.66%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/DUT/APBControl --
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/rtl/APB_Controller_.v
+----------------Focused Condition View-------------------
+Line       58 Item    1  (valid && Hwrite)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       valid         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  valid_0               -                             
+  Row   2:          1  valid_1               Hwrite                        
+  Row   3:          1  Hwrite_0              valid                         
+  Row   4:          1  Hwrite_1              valid                         
+
+----------------Focused Condition View-------------------
+Line       89 Item    1  (valid && Hwrite)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       valid         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  valid_0               -                             
+  Row   2:          1  valid_1               Hwrite                        
+  Row   3:          1  Hwrite_0              valid                         
+  Row   4:          1  Hwrite_1              valid                         
+
+----------------Focused Condition View-------------------
+Line       98 Item    1  (valid && Hwrite)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       valid         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  valid_0               -                             
+  Row   2:          1  valid_1               Hwrite                        
+  Row   3:          1  Hwrite_0              valid                         
+  Row   4:          1  Hwrite_1              valid                         
+
+
+
+----------------Focused Condition View-------------------
+Line       130 Item    1  ((Hresetn && (Paddr_temp >= -2147483648)) && (Paddr_temp < -2080374784))
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+                   Input Term   Covered  Reason for no coverage   Hint
+                  -----------  --------  -----------------------  --------------
+  (Paddr_temp >= -2147483648)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                     Non-masking condition(s)      
+ ---------  ---------  --------------------           -------------------------     
+  Row   1:          1  Hresetn_0                      -                             
+  Row   2:          1  Hresetn_1                      ((Paddr_temp < -2080374784) && (Paddr_temp >= -2147483648))
+  Row   3:    ***0***  (Paddr_temp >= -2147483648)_0  Hresetn                       
+  Row   4:          1  (Paddr_temp >= -2147483648)_1  ((Paddr_temp < -2080374784) && Hresetn)
+  Row   5:          1  (Paddr_temp < -2080374784)_0   (Hresetn && (Paddr_temp >= -2147483648))
+  Row   6:          1  (Paddr_temp < -2080374784)_1   (Hresetn && (Paddr_temp >= -2147483648))
+
+----------------Focused Condition View-------------------
+Line       132 Item    1  ((Hresetn && (Paddr_temp >= -2080374784)) && (Paddr_temp < -2013265920))
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+                   Input Term   Covered  Reason for no coverage   Hint
+                  -----------  --------  -----------------------  --------------
+  (Paddr_temp >= -2080374784)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                     Non-masking condition(s)      
+ ---------  ---------  --------------------           -------------------------     
+  Row   1:          1  Hresetn_0                      -                             
+  Row   2:          1  Hresetn_1                      ((Paddr_temp < -2013265920) && (Paddr_temp >= -2080374784))
+  Row   3:    ***0***  (Paddr_temp >= -2080374784)_0  Hresetn                       
+  Row   4:          1  (Paddr_temp >= -2080374784)_1  ((Paddr_temp < -2013265920) && Hresetn)
+  Row   5:          1  (Paddr_temp < -2013265920)_0   (Hresetn && (Paddr_temp >= -2080374784))
+  Row   6:          1  (Paddr_temp < -2013265920)_1   (Hresetn && (Paddr_temp >= -2080374784))
+
+----------------Focused Condition View-------------------
+Line       134 Item    1  ((Hresetn && (Paddr_temp >= -2013265920)) && (Paddr_temp < -1946157056))
+Condition totals: 1 of 3 input terms covered = 33.33%
+
+                   Input Term   Covered  Reason for no coverage   Hint
+                  -----------  --------  -----------------------  --------------
+  (Paddr_temp >= -2013265920)         N  '_0' not hit             Hit '_0'
+   (Paddr_temp < -1946157056)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                     Non-masking condition(s)      
+ ---------  ---------  --------------------           -------------------------     
+  Row   1:          1  Hresetn_0                      -                             
+  Row   2:          1  Hresetn_1                      ((Paddr_temp < -1946157056) && (Paddr_temp >= -2013265920))
+  Row   3:    ***0***  (Paddr_temp >= -2013265920)_0  Hresetn                       
+  Row   4:          1  (Paddr_temp >= -2013265920)_1  ((Paddr_temp < -1946157056) && Hresetn)
+  Row   5:    ***0***  (Paddr_temp < -1946157056)_0   (Hresetn && (Paddr_temp >= -2013265920))
+  Row   6:          1  (Paddr_temp < -1946157056)_1   (Hresetn && (Paddr_temp >= -2013265920))
+
+
+----------------Focused Condition View-------------------
+Line       152 Item    1  (valid && Hwrite)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      Hwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  valid_0               -                             
+  Row   2:          1  valid_1               Hwrite                        
+  Row   3:    ***0***  Hwrite_0              valid                         
+  Row   4:          1  Hwrite_1              valid                         
+
+
+
+----------------Focused Condition View-------------------
+Line       224 Item    1  (valid && Hwrite)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      Hwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  valid_0               -                             
+  Row   2:          1  valid_1               Hwrite                        
+  Row   3:    ***0***  Hwrite_0              valid                         
+  Row   4:          1  Hwrite_1              valid                         
+
+
+----------------Focused Condition View-------------------
+Line       245 Item    1  (data_outstanding_num > 1'b0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+  (data_outstanding_num > 1'b0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:    ***0***  (data_outstanding_num > 1'b0)_0  -                             
+  Row   2:          1  (data_outstanding_num > 1'b0)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       254 Item    1  (data_outstanding_num > 1'b0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+  (data_outstanding_num > 1'b0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:          1  (data_outstanding_num > 1'b0)_0  -                             
+  Row   2:    ***0***  (data_outstanding_num > 1'b0)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       277 Item    1  (valid && (addr_outstanding_num == 0))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+                   Input Term   Covered  Reason for no coverage   Hint
+                  -----------  --------  -----------------------  --------------
+  (addr_outstanding_num == 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                     Non-masking condition(s)      
+ ---------  ---------  --------------------           -------------------------     
+  Row   1:          1  valid_0                        -                             
+  Row   2:          1  valid_1                        (addr_outstanding_num == 0)   
+  Row   3:    ***0***  (addr_outstanding_num == 0)_0  valid                         
+  Row   4:          1  (addr_outstanding_num == 0)_1  valid                         
+
+----------------Focused Condition View-------------------
+Line       281 Item    1  (data_outstanding_num > 1'b0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+  (data_outstanding_num > 1'b0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:          1  (data_outstanding_num > 1'b0)_0  -                             
+  Row   2:    ***0***  (data_outstanding_num > 1'b0)_1  -                             
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    FSM Transitions                 22        19         3         0    86.36%
+
+================================FSM Details================================
+
+FSM Coverage for instance /top/DUT/APBControl --
+
+FSM_ID: PRESENT_STATE
+    Current State Object : PRESENT_STATE
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  55             ST_IDLE                   0
+  71             ST_READ                   2
+  64            ST_WWAIT                   1
+  82           ST_WRITEP                   4
+  75            ST_WRITE                   3
+  86          ST_RENABLE                   5
+ 104         ST_WENABLEP                   7
+  95          ST_WENABLE                   6
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  43                   6          ST_WWAIT -> ST_IDLE 
+  43                  11          ST_WRITE -> ST_IDLE 
+  43                  18          ST_WENABLEP -> ST_IDLE
+
+
+    Summary                       Bins      Hits    Misses  Excluded  Coverage
+    -------                       ----      ----    ------  --------  --------
+        FSM Transitions             22        19         3         0    86.36%
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Toggles                        298       276        22         0    92.61%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/DUT/APBControl --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                         Hreadyout           1           1      100.00 
+                                    Hreadyout_temp           1           1      100.00 
+                                   NEXT_STATE[0-2]           1           1      100.00 
+                                PRESENT_STATE[0-2]           1           1      100.00 
+                                        Paddr[0-1]           0           0        0.00 
+                                       Paddr[2-27]           1           1      100.00 
+                                      Paddr[28-30]           0           0        0.00 
+                                         Paddr[31]           1           1      100.00 
+                                   Paddr_temp[0-1]           0           0        0.00 
+                                  Paddr_temp[2-27]           1           1      100.00 
+                                 Paddr_temp[28-31]           0           0        0.00 
+                                           Penable           1           1      100.00 
+                                      Penable_temp           1           1      100.00 
+                                        Pselx[0-2]           1           1      100.00 
+                                   Pselx_temp[0-2]           1           1      100.00 
+                                      Pwdata[0-31]           1           1      100.00 
+                                 Pwdata_temp[0-31]           1           1      100.00 
+                                            Pwrite           1           1      100.00 
+                                       Pwrite_temp           1           1      100.00 
+                                     tempselx[0-2]           1           1      100.00 
+
+Total Node Count     =        149 
+Toggled Node Count   =        138 
+Untoggled Node Count =         11 
+Excluded Node Count =          0 
+
+Toggle Coverage      =      92.61% (276 of 298 bins)
+
+=================================================================================
+=== Instance: /top/DUT/ahb2apb_bridge_props_inst
+=== Design Unit: work.ahb2apb_bridge_props
+=================================================================================
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Conditions                       3         2         1         0    66.66%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/DUT/ahb2apb_bridge_props_inst --
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/assertions/ahb2apb_bridge_props.sv
+----------------Focused Condition View-------------------
+Line       9 Item    1  ((Hreadyout & Hreadyin) & (Htrans == 2))
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+       Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  Hreadyout_0           ((Htrans == 2) && Hreadyin)   
+  Row   2:          1  Hreadyout_1           ((Htrans == 2) && Hreadyin)   
+  Row   3:    ***0***  Hreadyin_0            ((Htrans == 2) && Hreadyout)  
+  Row   4:          1  Hreadyin_1            ((Htrans == 2) && Hreadyout)  
+  Row   5:          1  (Htrans == 2)_0       (Hreadyout & Hreadyin)        
+  Row   6:          1  (Htrans == 2)_1       (Hreadyout & Hreadyin)        
+
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Toggles                          4         3         1         0    75.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/DUT/ahb2apb_bridge_props_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                        assert_off           0           1       50.00 
+                                write_val_in_burst           1           1      100.00 
+
+Total Node Count     =          2 
+Toggled Node Count   =          1 
+Untoggled Node Count =          1 
+Excluded Node Count =          0 
+
+Toggle Coverage      =      75.00% (3 of 4 bins)
+
+=================================================================================
+=== Instance: /top/DUT
+=== Design Unit: work.Bridge_Top
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Toggles                        680       630        50         0    92.64%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/DUT --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                        Haddr[0-1]           0           0        0.00 
+                                       Haddr[2-27]           1           1      100.00 
+                                      Haddr[28-31]           0           0        0.00 
+                                       Haddr1[0-1]           0           0        0.00 
+                                      Haddr1[2-27]           1           1      100.00 
+                                     Haddr1[28-30]           0           0        0.00 
+                                        Haddr1[31]           1           1      100.00 
+                                       Haddr2[0-1]           0           0        0.00 
+                                      Haddr2[2-27]           1           1      100.00 
+                                     Haddr2[28-30]           0           0        0.00 
+                                        Haddr2[31]           1           1      100.00 
+                                              Hclk           1           1      100.00 
+                                      Hrdata[0-31]           1           1      100.00 
+                                          Hreadyin           0           0        0.00 
+                                         Hreadyout           1           1      100.00 
+                                           Hresetn           1           1      100.00 
+                                        Hresp[0-1]           0           0        0.00 
+                                       Htrans[0-1]           1           1      100.00 
+                                      Hwdata[0-31]           1           1      100.00 
+                                     Hwdata1[0-31]           1           1      100.00 
+                                     Hwdata2[0-31]           1           1      100.00 
+                                            Hwrite           1           1      100.00 
+                                         Hwrite_1d           1           1      100.00 
+                                         Hwrite_2d           1           1      100.00 
+                                        Paddr[0-1]           0           0        0.00 
+                                       Paddr[2-27]           1           1      100.00 
+                                      Paddr[28-30]           0           0        0.00 
+                                         Paddr[31]           1           1      100.00 
+                                           Penable           1           1      100.00 
+                                      Prdata[0-31]           1           1      100.00 
+                                        Pselx[0-2]           1           1      100.00 
+                                      Pwdata[0-31]           1           1      100.00 
+                                            Pwrite           1           1      100.00 
+                           addr_outstanding_num[0]           1           1      100.00 
+                           addr_outstanding_num[1]           0           0        0.00 
+                              data_outstanding_num           1           1      100.00 
+                                             valid           1           1      100.00 
+
+Total Node Count     =        340 
+Toggled Node Count   =        315 
+Untoggled Node Count =         25 
+Excluded Node Count =          0 
+
+Toggle Coverage      =      92.64% (630 of 680 bins)
+
+=================================================================================
+=== Instance: /top
+=== Design Unit: work.top
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Statements                      11         9         2         0    81.81%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/top.sv
+    84              1             $display("[TOP] Simulation complete");
+    85              1             $finish;
+
+=================================================================================
+=== Instance: /top_sv_unit
+=== Design Unit: work.top_sv_unit
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Branches                       120        91        29         0    75.83%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top_sv_unit
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_generator.sv
+------------------------------------IF Branch------------------------------------
+    42                                        12     Count coming in to IF
+    42              1                    ***0***         if (xtn.Hresetn == 0) begin
+                                              12     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                       842     Count coming in to IF
+    93              1                    ***0***           if (xtn_next.Hresetn == 0) begin
+                                             842     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    132                                       12     Count coming in to IF
+    132             1                    ***0***         if (xtn.Hresetn == 0) begin
+                                              12     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    184                                       21     Count coming in to IF
+    184             1                    ***0***         if (xtn.Hresetn == 0) begin
+                                              21     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    197                                       63     Count coming in to IF
+    197             1                    ***0***           if (xtn_next.Hresetn == 0) begin
+                                              63     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    236                                       26     Count coming in to IF
+    236             1                    ***0***         if (xtn.Hresetn == 0) begin
+                                              26     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    301                                       63     Count coming in to IF
+    301             1                    ***0***           if (xtn_next.Hresetn == 0) begin
+                                              63     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    340                                       16     Count coming in to IF
+    340             1                    ***0***         if (xtn.Hresetn == 0) begin
+                                              16     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    392                                       10     Count coming in to IF
+    392             1                    ***0***         if (xtn.Hresetn == 0) begin
+                                              10     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    425                                      100     Count coming in to IF
+    425             1                        100           randcase
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_driver.sv
+------------------------------------IF Branch------------------------------------
+    66                                       120     Count coming in to IF
+    66              1                        120                     if (xtn.Htrans == 2'b10 || xtn.Htrans == 2'b11)
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/env/scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    97                                      1689     Count coming in to IF
+    97              1                       1689                     if ((ahb_data.Haddr >= 32'h8000_0000) && (ahb_data.Haddr <= 32'h8BFF_FFFF)) begin
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    118                                      466     Count coming in to IF
+    118             2                        466                         (ahb_data.Haddr[31:24] < 8'h8C) ? 3'b100 : 3'b000;
+    118             3                    ***0***                         (ahb_data.Haddr[31:24] < 8'h8C) ? 3'b100 : 3'b000;
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    159                                        1     Count coming in to IF
+    159             1                    ***0***                 if (mismatch_count == 0)
+    161             1                          1                 else if (data_verified_count > mismatch_count)
+    163             1                    ***0***                 else
+Branch totals: 1 hit of 3 branches = 33.33%
+
+------------------------------------IF Branch------------------------------------
+    168                                        1     Count coming in to IF
+    168             1                    ***0***                 if (mismatch_count == 0 && data_verified_count > 0)
+    170             1                          1                 else
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv
+------------------------------------IF Branch------------------------------------
+    31                                         1     Count coming in to IF
+    31              1                          1                 if ((env.ahb_agt.gen2drv.num() == 0 && env.ahb_agt.mon2sb.num() == 0) || (wait_cycles > 300))
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_trans.sv
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              1                    ***0***             randcase
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21              1                    ***0***               1: env.ahb_agt.gen.signle_transaction_gen (0, 1, busy_state_dis, hwrite);
+    22              1                    ***0***               1: env.ahb_agt.gen.incr_burst_gen         (0, 1, busy_state_dis, hwrite);
+    23              1                    ***0***               1: env.ahb_agt.gen.wrap4_burst_gen        (0, 1, busy_state_dis, hwrite);
+    24              1                    ***0***               1: env.ahb_agt.gen.incr4_burst_gen        (0, 1, busy_state_dis, hwrite);
+    25              1                    ***0***               1: env.ahb_agt.gen.wrap8_burst_gen        (0, 1, busy_state_dis, hwrite);
+    26              1                    ***0***               1: env.ahb_agt.gen.incr8_burst_gen        (0, 1, busy_state_dis, hwrite);
+    27              1                    ***0***               1: env.ahb_agt.gen.wrap16_burst_gen       (0, 1, busy_state_dis, hwrite);
+    28              1                    ***0***               1: env.ahb_agt.gen.incr16_burst_gen       (0, 1, busy_state_dis, hwrite);
+Branch totals: 0 hits of 8 branches = 0.00%
+
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/mixed_seq_test.sv
+------------------------------------IF Branch------------------------------------
+    16                                        20     Count coming in to IF
+    16              1                         20           randcase
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    17                                        20     Count coming in to IF
+    17              1                          2             1: env.ahb_agt.gen.signle_transaction_gen (0, 1, busy_state_dis, hwrite);
+    18              1                          3             1: env.ahb_agt.gen.incr_burst_gen         (0, 1, busy_state_dis, hwrite);
+    19              1                          1             1: env.ahb_agt.gen.wrap4_burst_gen        (0, 1, busy_state_dis, hwrite);
+    20              1                          1             1: env.ahb_agt.gen.incr4_burst_gen        (0, 1, busy_state_dis, hwrite);
+    21              1                          5             1: env.ahb_agt.gen.wrap8_burst_gen        (0, 1, busy_state_dis, hwrite);
+    22              1                    ***0***             1: env.ahb_agt.gen.incr8_burst_gen        (0, 1, busy_state_dis, hwrite);
+    23              1                          6             1: env.ahb_agt.gen.wrap16_burst_gen       (0, 1, busy_state_dis, hwrite);
+    24              1                          2             1: env.ahb_agt.gen.incr16_burst_gen       (0, 1, busy_state_dis, hwrite);
+Branch totals: 7 hits of 8 branches = 87.50%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Conditions                      54        29        25         0    53.70%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top_sv_unit --
+
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_generator.sv
+----------------Focused Condition View-------------------
+Line       433 Item    1  ((((((((#rc1_w1# + #rc1_w2#) + #rc1_w3#) + #rc1_w4#) + #rc1_w5#) + #rc1_w6#) + #rc1_w7#) + #rc1_w8#) > 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                 Input Term   Covered  Reason for no coverage   Hint
+                                                                                                -----------  --------  -----------------------  --------------
+  ((((((((#rc1_w1# + #rc1_w2#) + #rc1_w3#) + #rc1_w4#) + #rc1_w5#) + #rc1_w6#) + #rc1_w7#) + #rc1_w8#) > 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                                                                                                   Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                         -------------------------     
+  Row   1:    ***0***  ((((((((#rc1_w1# + #rc1_w2#) + #rc1_w3#) + #rc1_w4#) + #rc1_w5#) + #rc1_w6#) + #rc1_w7#) + #rc1_w8#) > 0)_0  -                             
+  Row   2:          1  ((((((((#rc1_w1# + #rc1_w2#) + #rc1_w3#) + #rc1_w4#) + #rc1_w5#) + #rc1_w6#) + #rc1_w7#) + #rc1_w8#) > 0)_1  -                             
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       66 Item    1  ((xtn.Htrans == 2) || (xtn.Htrans == 3))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (xtn.Htrans == 2)         N  '_0' not hit             Hit '_0'
+  (xtn.Htrans == 3)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (xtn.Htrans == 2)_0   ~(xtn.Htrans == 3)            
+  Row   2:          1  (xtn.Htrans == 2)_1   -                             
+  Row   3:    ***0***  (xtn.Htrans == 3)_0   ~(xtn.Htrans == 2)            
+  Row   4:    ***0***  (xtn.Htrans == 3)_1   ~(xtn.Htrans == 2)            
+
+
+
+
+----------------Focused Condition View-------------------
+Line       81 Item    1  (this.vif.ahb_mon_cb.Hreadyout & this.vif.ahb_mon_cb.Hreadyin)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+   this.vif.ahb_mon_cb.Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:          1  this.vif.ahb_mon_cb.Hreadyout_0  this.vif.ahb_mon_cb.Hreadyin  
+  Row   2:          1  this.vif.ahb_mon_cb.Hreadyout_1  this.vif.ahb_mon_cb.Hreadyin  
+  Row   3:    ***0***  this.vif.ahb_mon_cb.Hreadyin_0   this.vif.ahb_mon_cb.Hreadyout 
+  Row   4:          1  this.vif.ahb_mon_cb.Hreadyin_1   this.vif.ahb_mon_cb.Hreadyout 
+
+
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       111 Item    1  (~this.vif.ahb_mon_cb.Hresetn || ~(this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin && ((this.vif.ahb_mon_cb.Htrans == 2) || (this.vif.ahb_mon_cb.Htrans == 3))))
+Condition totals: 3 of 5 input terms covered = 60.00%
+
+                         Input Term   Covered  Reason for no coverage   Hint
+                        -----------  --------  -----------------------  --------------
+       this.vif.ahb_mon_cb.Hreadyin         N  '_0' not hit             Hit '_0'
+  (this.vif.ahb_mon_cb.Htrans == 3)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                           Non-masking condition(s)      
+ ---------  ---------  --------------------                 -------------------------     
+  Row   1:          1  this.vif.ahb_mon_cb.Hresetn_0        -                             
+  Row   2:          1  this.vif.ahb_mon_cb.Hresetn_1        ~~(this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin && ((this.vif.ahb_mon_cb.Htrans == 2) || (this.vif.ahb_mon_cb.Htrans == 3)))
+  Row   3:          1  this.vif.ahb_mon_cb.Hreadyout_0      this.vif.ahb_mon_cb.Hresetn   
+  Row   4:          1  this.vif.ahb_mon_cb.Hreadyout_1      (this.vif.ahb_mon_cb.Hresetn && (this.vif.ahb_mon_cb.Hreadyin && ((this.vif.ahb_mon_cb.Htrans == 2) || (this.vif.ahb_mon_cb.Htrans == 3))))
+  Row   5:    ***0***  this.vif.ahb_mon_cb.Hreadyin_0       (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout)
+  Row   6:          1  this.vif.ahb_mon_cb.Hreadyin_1       (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout && ((this.vif.ahb_mon_cb.Htrans == 2) || (this.vif.ahb_mon_cb.Htrans == 3)))
+  Row   7:          1  (this.vif.ahb_mon_cb.Htrans == 2)_0  (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin && ~(this.vif.ahb_mon_cb.Htrans == 3))
+  Row   8:          1  (this.vif.ahb_mon_cb.Htrans == 2)_1  (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin)
+  Row   9:          1  (this.vif.ahb_mon_cb.Htrans == 3)_0  (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin && ~(this.vif.ahb_mon_cb.Htrans == 2))
+ Row   10:    ***0***  (this.vif.ahb_mon_cb.Htrans == 3)_1  (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin && ~(this.vif.ahb_mon_cb.Htrans == 2))
+
+----------------Focused Condition View-------------------
+Line       126 Item    1  (~this.vif.ahb_mon_cb.Hresetn || ~(this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin))
+Condition totals: 1 of 3 input terms covered = 33.33%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+    this.vif.ahb_mon_cb.Hresetn         N  '_0' not hit             Hit '_0'
+   this.vif.ahb_mon_cb.Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:    ***0***  this.vif.ahb_mon_cb.Hresetn_0    -                             
+  Row   2:          1  this.vif.ahb_mon_cb.Hresetn_1    ~~(this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin)
+  Row   3:          1  this.vif.ahb_mon_cb.Hreadyout_0  this.vif.ahb_mon_cb.Hresetn   
+  Row   4:          1  this.vif.ahb_mon_cb.Hreadyout_1  (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyin)
+  Row   5:    ***0***  this.vif.ahb_mon_cb.Hreadyin_0   (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout)
+  Row   6:          1  this.vif.ahb_mon_cb.Hreadyin_1   (this.vif.ahb_mon_cb.Hresetn && this.vif.ahb_mon_cb.Hreadyout)
+
+
+----------------Focused Condition View-------------------
+Line       165 Item    1  (this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+   this.vif.ahb_mon_cb.Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:          1  this.vif.ahb_mon_cb.Hreadyout_0  -                             
+  Row   2:          1  this.vif.ahb_mon_cb.Hreadyout_1  this.vif.ahb_mon_cb.Hreadyin  
+  Row   3:    ***0***  this.vif.ahb_mon_cb.Hreadyin_0   this.vif.ahb_mon_cb.Hreadyout 
+  Row   4:          1  this.vif.ahb_mon_cb.Hreadyin_1   this.vif.ahb_mon_cb.Hreadyout 
+
+----------------Focused Condition View-------------------
+Line       177 Item    1  (this.vif.ahb_mon_cb.Hreadyout && this.vif.ahb_mon_cb.Hreadyin)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+   this.vif.ahb_mon_cb.Hreadyin         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:          1  this.vif.ahb_mon_cb.Hreadyout_0  -                             
+  Row   2:          1  this.vif.ahb_mon_cb.Hreadyout_1  this.vif.ahb_mon_cb.Hreadyin  
+  Row   3:    ***0***  this.vif.ahb_mon_cb.Hreadyin_0   this.vif.ahb_mon_cb.Hreadyout 
+  Row   4:          1  this.vif.ahb_mon_cb.Hreadyin_1   this.vif.ahb_mon_cb.Hreadyout 
+
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       31 Item    1  (this.vif.apb_mon_cb.Penable ~& (this.vif.apb_mon_cb.Pselx != 0))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+                        Input Term   Covered  Reason for no coverage   Hint
+                       -----------  --------  -----------------------  --------------
+  (this.vif.apb_mon_cb.Pselx != 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                          Non-masking condition(s)      
+ ---------  ---------  --------------------                -------------------------     
+  Row   1:          1  this.vif.apb_mon_cb.Penable_0       (this.vif.apb_mon_cb.Pselx != 0)
+  Row   2:          1  this.vif.apb_mon_cb.Penable_1       (this.vif.apb_mon_cb.Pselx != 0)
+  Row   3:    ***0***  (this.vif.apb_mon_cb.Pselx != 0)_0  this.vif.apb_mon_cb.Penable   
+  Row   4:          1  (this.vif.apb_mon_cb.Pselx != 0)_1  this.vif.apb_mon_cb.Penable   
+
+
+
+----------------Focused Condition View-------------------
+Line       97 Item    1  ((this.ahb_data.Haddr >= -2147483648) && (this.ahb_data.Haddr <= -1946157057))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+                            Input Term   Covered  Reason for no coverage   Hint
+                           -----------  --------  -----------------------  --------------
+  (this.ahb_data.Haddr >= -2147483648)         N  '_0' not hit             Hit '_0'
+  (this.ahb_data.Haddr <= -1946157057)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                              Non-masking condition(s)      
+ ---------  ---------  --------------------                    -------------------------     
+  Row   1:    ***0***  (this.ahb_data.Haddr >= -2147483648)_0  -                             
+  Row   2:          1  (this.ahb_data.Haddr >= -2147483648)_1  (this.ahb_data.Haddr <= -1946157057)
+  Row   3:    ***0***  (this.ahb_data.Haddr <= -1946157057)_0  (this.ahb_data.Haddr >= -2147483648)
+  Row   4:          1  (this.ahb_data.Haddr <= -1946157057)_1  (this.ahb_data.Haddr >= -2147483648)
+
+----------------Focused Condition View-------------------
+Line       116 Item    1  ((ahb_data.Haddr[31:24] >= 128) & (ahb_data.Haddr[31:24] < 132))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+  (ahb_data.Haddr[31:24] >= 128)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:    ***0***  (ahb_data.Haddr[31:24] >= 128)_0  (ahb_data.Haddr[31:24] < 132) 
+  Row   2:          1  (ahb_data.Haddr[31:24] >= 128)_1  (ahb_data.Haddr[31:24] < 132) 
+  Row   3:          1  (ahb_data.Haddr[31:24] < 132)_0   (ahb_data.Haddr[31:24] >= 128)
+  Row   4:          1  (ahb_data.Haddr[31:24] < 132)_1   (ahb_data.Haddr[31:24] >= 128)
+
+
+----------------Focused Condition View-------------------
+Line       118 Item    1  (ahb_data.Haddr[31:24] < 140)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+  (ahb_data.Haddr[31:24] < 140)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:    ***0***  (ahb_data.Haddr[31:24] < 140)_0  -                             
+  Row   2:          1  (ahb_data.Haddr[31:24] < 140)_1  -                             
+
+
+
+
+----------------Focused Condition View-------------------
+Line       159 Item    1  (this.mismatch_count == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                  Input Term   Covered  Reason for no coverage   Hint
+                 -----------  --------  -----------------------  --------------
+  (this.mismatch_count == 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                    Non-masking condition(s)      
+ ---------  ---------  --------------------          -------------------------     
+  Row   1:          1  (this.mismatch_count == 0)_0  -                             
+  Row   2:    ***0***  (this.mismatch_count == 0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       161 Item    1  (this.data_verified_count > this.mismatch_count)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                        Input Term   Covered  Reason for no coverage   Hint
+                                       -----------  --------  -----------------------  --------------
+  (this.data_verified_count > this.mismatch_count)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                                          Non-masking condition(s)      
+ ---------  ---------  --------------------                                -------------------------     
+  Row   1:    ***0***  (this.data_verified_count > this.mismatch_count)_0  -                             
+  Row   2:          1  (this.data_verified_count > this.mismatch_count)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       168 Item    1  ((this.mismatch_count == 0) && (this.data_verified_count > 0))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+      (this.mismatch_count == 0)         N  '_1' not hit             Hit '_1'
+  (this.data_verified_count > 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:          1  (this.mismatch_count == 0)_0      -                             
+  Row   2:    ***0***  (this.mismatch_count == 0)_1      (this.data_verified_count > 0)
+  Row   3:    ***0***  (this.data_verified_count > 0)_0  (this.mismatch_count == 0)    
+  Row   4:    ***0***  (this.data_verified_count > 0)_1  (this.mismatch_count == 0)    
+
+
+
+----------------Focused Condition View-------------------
+Line       31 Item    1  (((this.env.ahb_agt.gen2drv.num() == 0) && (this.env.ahb_agt.mon2sb.num() == 0)) || (wait_cycles > 300))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+                             Input Term   Covered  Reason for no coverage   Hint
+                            -----------  --------  -----------------------  --------------
+  (this.env.ahb_agt.gen2drv.num() == 0)         N  '_0' not hit             Hit '_0'
+   (this.env.ahb_agt.mon2sb.num() == 0)         N  '_0' not hit             Hit '_0'
+                    (wait_cycles > 300)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                               Non-masking condition(s)      
+ ---------  ---------  --------------------                     -------------------------     
+  Row   1:    ***0***  (this.env.ahb_agt.gen2drv.num() == 0)_0  ~(wait_cycles > 300)          
+  Row   2:          1  (this.env.ahb_agt.gen2drv.num() == 0)_1  (this.env.ahb_agt.mon2sb.num() == 0)
+  Row   3:    ***0***  (this.env.ahb_agt.mon2sb.num() == 0)_0   (~(wait_cycles > 300) && (this.env.ahb_agt.gen2drv.num() == 0))
+  Row   4:          1  (this.env.ahb_agt.mon2sb.num() == 0)_1   (this.env.ahb_agt.gen2drv.num() == 0)
+  Row   5:    ***0***  (wait_cycles > 300)_0                    ~((this.env.ahb_agt.gen2drv.num() == 0) && (this.env.ahb_agt.mon2sb.num() == 0))
+  Row   6:    ***0***  (wait_cycles > 300)_1                    ~((this.env.ahb_agt.gen2drv.num() == 0) && (this.env.ahb_agt.mon2sb.num() == 0))
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       28 Item    1  ((((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#) + #rc2_w8#) > 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                 Input Term   Covered  Reason for no coverage   Hint
+                                                                                                -----------  --------  -----------------------  --------------
+  ((((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#) + #rc2_w8#) > 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                   Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                         -------------------------     
+  Row   1:    ***0***  ((((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#) + #rc2_w8#) > 0)_0  -                             
+  Row   2:    ***0***  ((((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#) + #rc2_w8#) > 0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       29 Item    1  (#randcase#2# <= ((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                Input Term   Covered  Reason for no coverage   Hint
+                                                                                               -----------  --------  -----------------------  --------------
+  (#randcase#2# <= ((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                  Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                        -------------------------     
+  Row   1:    ***0***  (#randcase#2# <= ((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#))_0  -                             
+  Row   2:    ***0***  (#randcase#2# <= ((((((#rc2_w1# + #rc2_w2#) + #rc2_w3#) + #rc2_w4#) + #rc2_w5#) + #rc2_w6#) + #rc2_w7#))_1  -                             
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       24 Item    1  ((((((((#rc3_w1# + #rc3_w2#) + #rc3_w3#) + #rc3_w4#) + #rc3_w5#) + #rc3_w6#) + #rc3_w7#) + #rc3_w8#) > 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                 Input Term   Covered  Reason for no coverage   Hint
+                                                                                                -----------  --------  -----------------------  --------------
+  ((((((((#rc3_w1# + #rc3_w2#) + #rc3_w3#) + #rc3_w4#) + #rc3_w5#) + #rc3_w6#) + #rc3_w7#) + #rc3_w8#) > 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                                                                                                   Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                         -------------------------     
+  Row   1:    ***0***  ((((((((#rc3_w1# + #rc3_w2#) + #rc3_w3#) + #rc3_w4#) + #rc3_w5#) + #rc3_w6#) + #rc3_w7#) + #rc3_w8#) > 0)_0  -                             
+  Row   2:          1  ((((((((#rc3_w1# + #rc3_w2#) + #rc3_w3#) + #rc3_w4#) + #rc3_w5#) + #rc3_w6#) + #rc3_w7#) + #rc3_w8#) > 0)_1  -                             
+
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Excluded  Coverage
+    ----------------              ----      ----    ------  --------  --------
+    Statements                     487       415        72         0    85.21%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top_sv_unit --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_generator.sv
+    14              1         gen2drv.put(tr_item);
+    43              1           $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn.Hresetn);
+    44              1           return;
+    94              1             $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn_next.Hresetn);
+    95              1             break;
+    133             1           $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn.Hresetn);
+    134             1           return;
+    185             1           $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn.Hresetn);
+    186             1           return;
+    198             1             $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn_next.Hresetn);
+    199             1             break;
+    237             1           $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn.Hresetn);
+    238             1           return;
+    302             1             $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn_next.Hresetn);
+    303             1             break;
+    341             1           $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn.Hresetn);
+    342             1           return;
+    393             1           $display("[AHB_GEN] Reset transaction generated in burst sequence! Hresetn = %b", xtn.Hresetn);
+    394             1           return;
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/agents/ahb_agent/ahb_agent.sv
+    39              1         gen.send_item(tr_item);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/agents/apb_agent/apb_trans_item.sv
+    15              1         $display("[APB_TRANS_ITEM] Paddr=%0h  Pwdata=%0h  Prdata=%0h  Pwrite=%0b  Penable=%0b  Pselx=%0b",
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/env/scoreboard.sv
+    160             1                     pass_count = data_verified_count;
+    164             1                     pass_count = 0;
+    169             1                     $display ("TEST PASSED");
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/base_test.sv
+    33              1                 wait_cycles++;
+    34              1                 @(env.ahb_agt.drv_vif.ahb_drv_cb);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/normal_burst_seq_test.sv
+    11              1             super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    15              1           $display("Normal burst sequence test");
+    16              1           env.ahb_agt.gen.burst_sequence(0, 1, 1, 20, env.ahb_agt.drv.vif);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/back_to_back_write_seq_test.sv
+    11              1             super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    15              1           $display("Back-to-back write sequence test");
+    16              1           env.ahb_agt.gen.back_to_back_write_sequence(0, 1, 1, 20, 15);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_reset_test.sv
+    10              1         super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    14              1         $display("Burst sequence with reset test");
+    15              1         env.ahb_agt.gen.burst_sequence(0, 0, 1, 20, env.ahb_agt.drv.vif);
+    16              1         repeat (20) @(env.ahb_agt.drv.vif.ahb_drv_cb);
+    16              2     
+    17              1         env.ahb_agt.gen.burst_sequence(0, 1, 1, 20, env.ahb_agt.drv.vif);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_trans.sv
+    11              1             super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    16              1           $display("Burst sequence with inserting BUSY states in read transactions only");
+    17              1           repeat (20) begin
+    18              1             hwrite = 0;
+    19              1             busy_state_dis = 0;
+    21              1               1: env.ahb_agt.gen.signle_transaction_gen (0, 1, busy_state_dis, hwrite);
+    22              1               1: env.ahb_agt.gen.incr_burst_gen         (0, 1, busy_state_dis, hwrite);
+    23              1               1: env.ahb_agt.gen.wrap4_burst_gen        (0, 1, busy_state_dis, hwrite);
+    24              1               1: env.ahb_agt.gen.incr4_burst_gen        (0, 1, busy_state_dis, hwrite);
+    25              1               1: env.ahb_agt.gen.wrap8_burst_gen        (0, 1, busy_state_dis, hwrite);
+    26              1               1: env.ahb_agt.gen.incr8_burst_gen        (0, 1, busy_state_dis, hwrite);
+    27              1               1: env.ahb_agt.gen.wrap16_burst_gen       (0, 1, busy_state_dis, hwrite);
+    28              1               1: env.ahb_agt.gen.incr16_burst_gen       (0, 1, busy_state_dis, hwrite);
+    30              1             repeat ($urandom_range(1,10)) @(env.ahb_agt.drv.vif.ahb_drv_cb);
+    30              2     
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/burst_seq_w_busy_in_read_write_trans.sv
+    10              1         super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    14              1         $display("Burst sequence with inserting BUSY states in both read and write transactions");
+    15              1         env.ahb_agt.gen.burst_sequence(0, 1, 0, 20, env.ahb_agt.drv.vif);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/back_to_back_transfer_seq_test.sv
+    10              1             super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    15              1           bit hwrite = 1;
+    17              1           $display("Back-to-back transfer test");
+    18              1           repeat (15) begin
+    19              1               xtn = new();
+    29              1               xtn.print();
+    30              1               env.ahb_agt.gen.send_item(xtn);
+    31              1               hwrite = ~hwrite;
+    35              1           xtn = new();
+    37              1           env.ahb_agt.gen.send_item(xtn);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/error_injection_seq_test.sv
+    11              1             super.new(ahb_drv_vif, ahb_mon_vif, apb_drv_vif, apb_mon_vif);
+    15              1           $display("Error injection sequence test");
+    16              1           env.ahb_agt.gen.burst_sequence(0, 1, 1, 4, env.ahb_agt.drv.vif);
+    17              1           env.ahb_agt.gen.burst_sequence(1, 1, 1, 4, env.ahb_agt.drv.vif);
+    18              1           env.ahb_agt.gen.burst_sequence(0, 1, 1, 4, env.ahb_agt.drv.vif);
+  File /home/bao/my_project/DV/AHB2APB_Brige/tb/tests/mixed_seq_test.sv
+    22              1             1: env.ahb_agt.gen.incr8_burst_gen        (0, 1, busy_state_dis, hwrite);
+
+
+Total Coverage By Instance (filtered view): 79.21%
+
